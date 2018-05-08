@@ -7,6 +7,8 @@ class Test(BaseTest):
     def __init__(self, driver, base_url, module):
         super(Test, self).__init__(driver, base_url, module)
 
+
+
     def run(self):
         """
         Runs the tests. this is what will be getting called by run.py
