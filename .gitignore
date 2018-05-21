@@ -1,2 +1,7 @@
 *.pyc
 screenshots/*.png
+.idea/
+.pytest_cache/
+*.log
+venv/
+env/

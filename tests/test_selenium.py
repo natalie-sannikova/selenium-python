@@ -4,7 +4,6 @@ from selenium.webdriver.remote.webdriver import WebDriver
 class TestClass(object):
 
     def test_chrome(self, selenium: WebDriver):
-        selenium.implicitly_wait(10)
         selenium.get("https://google.com")
         queryInput = selenium.find_element_by_name("q")
         queryInput.send_keys("hello world wiki")
@@ -14,7 +13,6 @@ class TestClass(object):
             assert False
 
     def test_chrome2(self, selenium: WebDriver):
-        selenium.implicitly_wait(10)
         selenium.get("https://google.com")
         queryInput = selenium.find_element_by_name("q")
         queryInput.send_keys("hello world wiki")
